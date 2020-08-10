@@ -16,7 +16,7 @@
 
 ###使用介绍
 
-#####1、ZJCViewAttribute
+#####ZJCViewAttribute
 |   ZJCViewAttribute   |   NSLayoutAttribute   |
 |  ----  | ----  |
 | view.zjc_left  | NSLayoutAttributeLeft |
@@ -31,18 +31,26 @@
 | view.zjc_centerY  | NSLayoutAttributeCenterY |
 | view.zjc_baseline  | NSLayoutAttributeBaseline |
 
-#####2、基础布局方式
+#####基础布局方式
+
 `[view1.zjc_top equal:view2.zjc_top offset:10];`
+
 `[view1.zjc_height equal:view2];`
+
 `[view1.zjc_left equal:view2. zjc_left];`
+
 `[view1.zjc_width equalViews:@[view2, view3]];`
 
 此处列举的只是一部分方法，更多方法可以查看ZJCViewAttribute.h头文件
 
-#####3、一些特殊常用布局方式
+#####一些特殊常用布局方式
+
 `[view1 equal_size:CGSizeMake(150, 300)];`
+
 `[view1 equal_viewSize: view2];`
+
 `[view1 equal_viewCenter:view2];`
+
 `[view1 equal_viewEdges:view2 insets:UIEdgeInsetsMake(10, 10, 10, 10)];`
 
 更多方法可以查看UIView+ZJCAddition.h头文件
